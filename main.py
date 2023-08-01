@@ -1,18 +1,19 @@
 import random
 import time
-import keyboard
-import mouse
+import pyautogui
 
+
+hotkey = "esc" # select hotkey
 
 def loop():
     time.sleep(3)
     while True:
         time.sleep(random.uniform(.1, .2))
-        keyboard.press("4")
+        pyautogui.press(hotkey)
         time.sleep(random.uniform(.2, .6))
-        mouse.click(button="left")
+        pyautogui.click(button="left")
         time.sleep(random.uniform(.8, 1)) # at inventory
-        mouse.click(button="left")
+        pyautogui.click(button="left")
         time.sleep(random.uniform(1.9,2.2))
 
 
