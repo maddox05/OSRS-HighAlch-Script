@@ -2,8 +2,10 @@ import random
 import time
 import pyautogui
 
+file = open("hotkey.txt", "r")
+hotkey = file.read()
+print(f"hotkey is {hotkey}")
 
-hotkey = "esc" # select hotkey
 
 def loop():
     time.sleep(3)
@@ -12,9 +14,9 @@ def loop():
         pyautogui.press(hotkey)
         time.sleep(random.uniform(.2, .6))
         pyautogui.click(button="left")
-        time.sleep(random.uniform(.8, 1)) # at inventory
+        time.sleep(random.uniform(.8, 1))  # at inventory
         pyautogui.click(button="left")
-        time.sleep(random.uniform(1.9,2.2))
+        time.sleep(random.uniform(1.9, 2.2))
 
 
 if __name__ == '__main__':
