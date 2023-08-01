@@ -4,6 +4,7 @@ import pyautogui
 
 file = open("hotkey.txt", "r")
 hotkey = file.read()
+file.close()
 print(f"hotkey is {hotkey}")
 
 
