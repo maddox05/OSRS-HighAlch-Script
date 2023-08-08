@@ -1,2 +1,2 @@
 # OSRS-HighAlch-Script
-set 4 as your magic book button
+works on windows, macOS, and linux.
